@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+}
+
+#quote {
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    word-spacing: 5px;
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#cfq {
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    word-spacing: 5px;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    transition: transform .2s;
+    bottom: 15%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#cfq:hover {
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 350px) {
+    #quote {
+        font-size: 1rem;
+    }
+    #cfq {
+        font-size: 0.8rem;
+    }
+}
